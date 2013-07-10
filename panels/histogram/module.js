@@ -310,7 +310,7 @@ angular.module('kibana.histogram', [])
                 show: scope.panel['y-axis'], 
                 min: 0, 
                 max: scope.panel.percentage && scope.panel.stack ? 100 : null, 
-                color: "#c8c8c8" 
+                color: "#000000" 
               },
               xaxis: {
                 timezone: scope.panel.timezone,
@@ -318,13 +318,13 @@ angular.module('kibana.histogram', [])
                 mode: "time",
                 timeformat: time_format(scope.panel.interval),
                 label: "Datetime",
-                color: "#c8c8c8",
+                color: "#000000",
               },
               grid: {
                 backgroundColor: null,
-                borderWidth: 0,
-                borderColor: '#eee',
-                color: "#eee",
+                borderWidth: 2,
+                borderColor: '#000000',
+                color: "#000000",
                 hoverable: true,
               },
               colors: ['#86B22D','#BF6730','#1D7373','#BFB930','#BF3030','#77207D']
