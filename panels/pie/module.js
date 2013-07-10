@@ -193,7 +193,7 @@ angular.module('kibana.pie', [])
     restrict: 'A',
     link: function(scope, elem, attrs) {
 
-      elem.html('<center><img src="common/img/load_big.gif"></center>')
+      elem.html('<center><img src="common/img/load-white.gif"></center>')
 
       // Receive render events
       scope.$on('render',function(){

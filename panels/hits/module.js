@@ -177,7 +177,7 @@ angular.module('kibana.hits', [])
       // Function for rendering panel
       function render_panel() {
 
-        var scripts = $LAB.script("common/lib/panels/jquery.flot-white.js").wait()
+        var scripts = $LAB.script("common/lib/panels/jquery.flot.js").wait()
                           .script("common/lib/panels/jquery.flot.pie.js")
 
         // Populate element.
@@ -196,10 +196,10 @@ angular.module('kibana.hits', [])
                 yaxis: { show: true, min: 0, color: "#000000" },
                 xaxis: { show: false },
                 grid: {
-                  backgroundColor: null,
-                  borderWidth: 2,
-                  borderColor: '#000000',
-                  color: "#000000",
+                  backgroundColor: '#ffffff',
+                  borderWidth: 0,
+                  borderColor: '#eee',
+                  color: "#eee",
                   hoverable: true,
                 },
                 colors: ['#86B22D','#BF6730','#1D7373','#BFB930','#BF3030','#77207D']
@@ -218,7 +218,7 @@ angular.module('kibana.hits', [])
                       label: 'The Rest'
                     },
                     stroke: {
-                      color: '#000000',
+                      color: '#272b30',
                       width: 0
                     },
                     label: { 
